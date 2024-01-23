@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Arash Tavana | Simple JS Project</title>
+  </head>
+  <body>
+    <header class="container-fluid my-3 mb-5">
+      <div class="container page-title">
+        <p>Arash tavana | Products page</p>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div id="serach-boxes">
+          <input class="form-control" type="search" id="search-input" placeholder="Search name..." />
+          <div class="filter-btns mt-4 ms-1">
+            <input type="radio" class="btn-check" name="filters" id="select-all" autocomplete="off" checked />
+            <label data-filter="all" class="filter btn me-2" for="select-all">All</label>
+
+            <input type="radio" class="btn-check" name="filters" id="select-tech" autocomplete="off" />
+            <label data-filter="tech" class="filter btn me-2" for="select-tech">Tech</label>
+
+            <input type="radio" class="btn-check" name="filters" id="select-clothing" autocomplete="off" />
+            <label data-filter="clothing" class="filter btn me-2" for="select-clothing">Clothing</label>
+
+            <input type="radio" class="btn-check" name="filters" id="select-health" autocomplete="off" />
+            <label data-filter="health" class="filter btn me-2" for="select-health">Health</label>
+          </div>
+          <div class="input-group input-group-lg mt-5" id="search-price-input">
+            <input type="number" class="form-control" list="datalistOptions" placeholder="Search price..." />
+            <button class="btn btn-outline-primary" type="button">Search</button>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-5">
+        <div id="products">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-cat="tech">
+              <div class="card">
+                <img src="./assets/img/iphone-13-599.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Apple iphone 13</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 599</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="clothing">
+              <div class="card">
+                <img src="./assets/img/sweatshirt.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sweatshirt</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 139</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="tech">
+              <div class="card">
+                <img src="./assets/img/airpod-249.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Apple airpod pro2</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 249</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="health">
+              <div class="card">
+                <img src="./assets/img/cream.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cream</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 39</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="clothing">
+              <div class="card">
+                <img src="./assets/img/running shoes.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Running shoes</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 169</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="tech">
+              <div class="card">
+                <img src="./assets/img/Apple Watch Series 9-399.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Apple Watch Series 9</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 399</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="health">
+              <div class="card">
+                <img src="./assets/img/shampoo.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Shampoo</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 39</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="tech">
+              <div class="card">
+                <img src="./assets/img/iPad Pro-1299.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Apple iPad Pro</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 1299</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="tech">
+              <div class="card">
+                <img src="./assets/img/iphone-15-pro-999.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Apple iphone 15 pro</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 999</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-cat="health">
+              <div class="card">
+                <img src="./assets/img/Omega-3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Omega-3</h5>
+                  <div class="card-text">
+                    <h4>
+                      <span class="badge text-bg-primary">$ 39</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

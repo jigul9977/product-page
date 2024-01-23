@@ -1,0 +1,77 @@
+.page-title {
+  background-color: #ee6c4d;
+  color: #293241;
+  border-radius: 15px;
+  /* margin: 10px 0 20px; */
+}
+.page-title p {
+  margin: 0;
+  padding: 25px 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+#serach-boxes input {
+  font-size: 1.2rem;
+  background-color: #fafafa;
+  color: #293241;
+  padding: 20px 15px;
+  border-radius: 15px;
+  border: 1px solid #ee6c4d;
+}
+#serach-boxes #search-input {
+  padding: 20px 15px;
+  border-radius: 15px;
+
+  /* margin: 0 0 20px ; */
+}
+#serach-boxes input:focus {
+  box-shadow: 0 0 0 0.25rem #ee6d4d8e;
+}
+#serach-boxes input::placeholder {
+  font-weight: 600;
+  color: #293241;
+}
+
+#search-price-input input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#search-price-input button{
+	border-color: #ee6c4d;
+	background-color: #ee6c4d;
+	color: #e0fbfc;
+}
+.filter-btns label.btn {
+  background-color: #ee6c4d;
+  color: #e0fbfc;
+  border: 1px solid #ee6c4d!important;
+	font-size: 1.1rem;
+}
+.filter-btns .btn:hover {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border: 1px solid #293241!important;
+}
+
+
+.filter-btn .btn-check:checked + .btn,
+.filter-btn .btn.active,
+.filter-btn .btn.show,
+.filter-btn .btn:first-child:active,
+:not(.btn-check) + .btn:active .card {
+  border: 1px solid #ee6c4d;
+	color: #293241;
+}
+
+#products .card-title{
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+#products .card-text{
+	padding-left: 10px;
+}
+#products .badge{
+	
+	background-color: #ee6c4d!important;
+	color: #E0FBFC!important;
+}
